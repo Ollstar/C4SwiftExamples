@@ -1,0 +1,3 @@
+[submodule "C4iOS"]
+	path = C4iOS
+	url = https://github.com/C4Framework/C4iOS

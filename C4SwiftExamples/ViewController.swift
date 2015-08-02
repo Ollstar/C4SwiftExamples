@@ -18,6 +18,7 @@
 // IN THE SOFTWARE.
 
 import UIKit
+import C4
 
 class ViewController: UIViewController {
 

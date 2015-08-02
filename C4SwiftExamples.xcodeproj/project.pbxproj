@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63487C0A1B6EF8B2008EB4C3 /* C4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63487C091B6EF8B2008EB4C3 /* C4.framework */; };
 		63F0483C1B6EDA2400F78423 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0483B1B6EDA2400F78423 /* AppDelegate.swift */; };
 		63F0483E1B6EDA2400F78423 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0483D1B6EDA2400F78423 /* ViewController.swift */; };
 		63F048411B6EDA2400F78423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F0483F1B6EDA2400F78423 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63487C091B6EF8B2008EB4C3 /* C4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = C4.framework; path = "C4iOS/build/Debug-iphoneos/C4.framework"; sourceTree = "<group>"; };
 		63F048361B6EDA2400F78423 /* C4SwiftExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C4SwiftExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F0483A1B6EDA2400F78423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63F0483B1B6EDA2400F78423 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63487C0A1B6EF8B2008EB4C3 /* C4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		63F0482D1B6EDA2400F78423 = {
 			isa = PBXGroup;
 			children = (
+				63487C091B6EF8B2008EB4C3 /* C4.framework */,
 				63F048381B6EDA2400F78423 /* C4SwiftExamples */,
 				63F0484E1B6EDA2400F78423 /* C4SwiftExamplesTests */,
 				63F048371B6EDA2400F78423 /* Products */,
@@ -156,6 +160,7 @@
 		63F0482E1B6EDA2400F78423 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = C4;
 				TargetAttributes = {
@@ -342,6 +347,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/C4iOS/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = C4SwiftExamples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +361,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/C4iOS/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = C4SwiftExamples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +424,7 @@
 				63F048571B6EDA2400F78423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63F048581B6EDA2400F78423 /* Build configuration list for PBXNativeTarget "C4SwiftExamplesTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +433,7 @@
 				63F0485A1B6EDA2400F78423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
