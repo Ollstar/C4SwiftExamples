@@ -18,6 +18,7 @@
 // IN THE SOFTWARE.
 
 import UIKit
+import C4
 
 @UIApplicationMain
 class C4ExampleAppDelegate: UIResponder, UIApplicationDelegate {
@@ -26,6 +27,7 @@ class C4ExampleAppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        window?.tintColor = UIColor(C4Blue)
         return true
     }
 
