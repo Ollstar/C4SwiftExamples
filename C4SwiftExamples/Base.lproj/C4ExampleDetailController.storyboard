@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3NA-CY-Lme">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example Detail Controller-->
+        <scene sceneID="2WD-8y-sJd">
+            <objects>
+                <viewController id="3NA-CY-Lme" customClass="C4ExampleDetailController" customModule="C4SwiftExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xMB-AH-Uri"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yjn-eH-PGE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DU7-rN-WwQ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="oky-W3-JQX" userLabel="Canvas Container View">
+                                <rect key="frame" x="21" y="113" width="278" height="278"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="248" id="4WD-QF-dZT"/>
+                                    <constraint firstAttribute="width" constant="320" id="IjX-eA-Sbk"/>
+                                    <constraint firstAttribute="width" priority="50" constant="278" id="wPw-Xx-ycY"/>
+                                    <constraint firstAttribute="width" secondItem="oky-W3-JQX" secondAttribute="height" multiplier="1:1" id="xPz-Jv-lU8"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4WD-QF-dZT"/>
+                                        <exclude reference="IjX-eA-Sbk"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oky-W3-JQX" firstAttribute="centerY" secondItem="DU7-rN-WwQ" secondAttribute="centerY" id="1bd-tx-xUE"/>
+                            <constraint firstItem="oky-W3-JQX" firstAttribute="leading" relation="lessThanOrEqual" secondItem="DU7-rN-WwQ" secondAttribute="leadingMargin" priority="750" constant="10" id="9jb-MM-1fk"/>
+                            <constraint firstItem="oky-W3-JQX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xMB-AH-Uri" secondAttribute="bottom" priority="500" constant="10" id="9ye-1M-VHF"/>
+                            <constraint firstItem="oky-W3-JQX" firstAttribute="top" secondItem="xMB-AH-Uri" secondAttribute="bottom" priority="500" constant="10" id="C81-zl-Uj4"/>
+                            <constraint firstItem="Yjn-eH-PGE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="oky-W3-JQX" secondAttribute="bottom" priority="500" constant="10" id="H7Z-KU-x5g"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="oky-W3-JQX" secondAttribute="trailing" priority="200" constant="5" id="Iz7-XS-JN0"/>
+                            <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="oky-W3-JQX" secondAttribute="trailing" priority="750" constant="10" id="UAj-Hp-ypH"/>
+                            <constraint firstItem="Yjn-eH-PGE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="oky-W3-JQX" secondAttribute="bottom" priority="100" constant="5" id="fYo-Jt-jAb"/>
+                            <constraint firstAttribute="bottomMargin" relation="lessThanOrEqual" secondItem="oky-W3-JQX" secondAttribute="bottom" constant="5" id="m1E-Z4-Jv8"/>
+                            <constraint firstItem="oky-W3-JQX" firstAttribute="centerX" secondItem="DU7-rN-WwQ" secondAttribute="centerX" id="oa4-QS-eHy"/>
+                            <constraint firstItem="oky-W3-JQX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DU7-rN-WwQ" secondAttribute="leadingMargin" priority="200" constant="5" id="xXY-H2-sOB"/>
+                            <constraint firstItem="oky-W3-JQX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xMB-AH-Uri" secondAttribute="bottom" priority="100" constant="5" id="yQ1-I1-58d"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9jb-MM-1fk"/>
+                                <exclude reference="9ye-1M-VHF"/>
+                                <exclude reference="C81-zl-Uj4"/>
+                                <exclude reference="UAj-Hp-ypH"/>
+                                <exclude reference="m1E-Z4-Jv8"/>
+                                <exclude reference="H7Z-KU-x5g"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="canvasContainerView" destination="oky-W3-JQX" id="3My-r0-GIr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPL-ou-7b8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="621" y="358"/>
+        </scene>
+    </scenes>
+</document>

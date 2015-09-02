@@ -1,4 +1,4 @@
-// Copyright © 2014 C4
+// Copyright © 2015 C4
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -17,18 +17,31 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
+import Foundation
 import UIKit
 import C4
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+class C4ExampleCell: UICollectionViewCell {
+    
+    private(set) var canvasController: C4CanvasController?
+    
+    func configure(example: C4CanvasController) {
+        
+        // tear down old canvas
+        canvasController?.viewWillDisappear(false)
+        if let oldView = canvasController?.view {
+            for view in oldView.subviews {
+                view.removeFromSuperview()
+            }
+        }
+        canvasController?.viewDidDisappear(false)
+        
+        // prep new canvas
+        example.viewWillAppear(false)
+        self.contentView.add(example.view)
+        example.viewDidAppear(false)
+        example.setup()
+        
+        canvasController = example
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
 }
-

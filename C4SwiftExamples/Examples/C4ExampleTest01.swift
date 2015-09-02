@@ -1,4 +1,4 @@
-// Copyright © 2014 C4
+// Copyright © 2015 C4
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to
@@ -17,37 +17,14 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
+import Foundation
 import UIKit
+import C4
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-
-
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        return true
-    }
-
-    func applicationWillResignActive(application: UIApplication) {
-
-    }
-
-    func applicationDidEnterBackground(application: UIApplication) {
-
-    }
-
-    func applicationWillEnterForeground(application: UIApplication) {
-
-    }
-
-    func applicationDidBecomeActive(application: UIApplication) {
-
-    }
-
-    func applicationWillTerminate(application: UIApplication) {
-
+class C4ExampleTest01: C4CanvasController {
+    
+    override func setup() {
+        self.canvas.backgroundColor = C4Blue
     }
     
 }
-
