@@ -23,7 +23,7 @@ import C4
 
 class C4ExampleCell: UICollectionViewCell {
     
-    private(set) var canvasController: C4CanvasController?
+    private var canvasController: C4CanvasController?
     
     func configure(example: C4CanvasController) {
         
